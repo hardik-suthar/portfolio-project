@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f4efff"/>
+      <stop offset="100%" stop-color="#cfc2ff"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Transparent background -->
+
+  <!-- Gear 5 inspired flowing cloud -->
+  <g fill="url(#glow)" stroke="#8f78d8" stroke-width="10"
+     stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)">
+
+    <!-- Main cloud mass -->
+    <path d="
+      M 185,405
+      C 125,350 160,270 235,275
+      C 225,205 315,170 365,220
+      C 395,145 505,145 525,230
+      C 570,165 680,180 685,265
+      C 755,215 850,260 825,335
+      C 900,315 955,365 920,425
+      C 865,500 755,480 705,445
+      C 650,510 535,505 500,450
+      C 445,505 345,490 325,435
+      C 260,475 195,450 185,405 Z"/>
+
+    <!-- Left curling cloud -->
+    <path d="
+      M 315,330
+      C 240,310 210,355 245,390
+      C 270,415 320,400 315,365
+      C 310,340 275,340 270,360
+      C 266,375 286,382 296,370"/>
+
+    <!-- Upper spiral -->
+    <path d="
+      M 500,235
+      C 450,175 370,190 365,245
+      C 360,295 420,315 455,280
+      C 480,255 455,225 425,235
+      C 405,242 408,265 428,270"/>
+
+    <!-- Right curling cloud -->
+    <path d="
+      M 720,325
+      C 785,280 850,310 850,360
+      C 850,415 780,435 745,395
+      C 720,365 750,335 780,345
+      C 805,354 800,378 780,385"/>
+
+    <!-- Lower flowing curl -->
+    <path d="
+      M 440,430
+      C 390,470 395,535 455,545
+      C 515,555 550,505 520,470
+      C 495,440 455,458 460,490
+      C 465,510 490,510 500,495"/>
+  </g>
+
+  <!-- Small floating cloud wisps -->
+  <g fill="none" stroke="#d8ccff" stroke-width="16" stroke-linecap="round">
+    <path d="M145 455 C105 430 105 390 145 375"/>
+    <path d="M875 475 C930 450 945 405 915 375"/>
+    <path d="M590 125 C620 95 660 100 680 130"/>
+  </g>
+</svg>
